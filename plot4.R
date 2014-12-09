@@ -50,7 +50,7 @@ with(powerCon, points(DateTime, Sub_metering_1, type="l"))
 with(powerCon, points(DateTime, Sub_metering_2, type="l", col="red"))
 with(powerCon, points(DateTime, Sub_metering_3, type="l", col="blue"))
 title(ylab="Energy sub metering")
-legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, col=c("black", "red", "blue"))
+legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, col=c("black", "red", "blue"), bty="n")
 # Draw the fourth plot.
 with(powerCon, plot(DateTime, Global_reactive_power, type="l", xlab="datetime"))
 
